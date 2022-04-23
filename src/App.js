@@ -1,13 +1,27 @@
+// IMPORTS
 import './App.css';
-import TopBar from './components/TopBar'
+import TopBar from './components/TopBar';
+import styled from 'styled-components';
 
-function App() {
+// FUNCTIONAL COMPONENT
+export default function App() {
+  // VANILLA JS SECTION
+
+
+  // JSX SECTION
   return (
     <div className="App">
-      <TopBar />
+      <Header>
+        <TopBar />
+      </Header>
       <h1>Hello World</h1>
     </div>
   );
 }
 
-export default App;
+
+// STYLED COMPONENTS
+const Header = styled.div`
+  height: 150px;
+`
+
