@@ -2,6 +2,7 @@
 import './App.css';
 import TopBar from './components/TopBar';
 import styled from 'styled-components';
+import HeroPic from './components/HeroPic';
 
 // FUNCTIONAL COMPONENT
 export default function App() {
@@ -10,10 +11,11 @@ export default function App() {
 
   // JSX SECTION
   return (
-    <div className="App">
+    <div className="App" style={{fontFamily: "sans-serif"}}>
       <Header>
         <TopBar />
       </Header>
+      <HeroPic />
       <h1>Hello World</h1>
     </div>
   );
